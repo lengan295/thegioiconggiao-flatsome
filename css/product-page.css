@@ -110,3 +110,59 @@ button.single_add_to_cart_button.button.alt {
     margin-top: 10px;
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
 }
+
+.section_noi_dung_khuyen_mai {
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+.noi_dung_khuyen_mai_title{
+    background-color: #d1d5db;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.hidden-cat-text span.hdevvn-show-cats{
+    display: none !important
+}
+.section_noi_dung_khuyen_mai .tinymce {
+    padding:10px 5px;
+    background:#fff !important;
+    color:#000;
+    margin:0 !important;
+}
+
+.section_noi_dung_khuyen_mai .tinymce ul li:before,
+.section_noi_dung_khuyen_mai .tinymce ol li:before {
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f058";
+    position:absolute;
+    top:3px;
+    left:8px;
+    font-size:16px;
+    color:#7ad03a;
+}
+
+.section_noi_dung_khuyen_mai .tinymce ul li,
+.section_noi_dung_khuyen_mai .tinymce ol li {
+    padding-left:27px;
+    position:relative;
+    margin-left:0;
+    margin-bottom:3px;
+    font-size:14px;
+}
+
+.section_noi_dung_khuyen_mai .tinymce ul,
+.section_noi_dung_khuyen_mai .tinymce ol {
+    list-style:none !important;
+    padding:0;
+    margin-bottom:0;
+}
