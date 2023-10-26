@@ -1,0 +1,112 @@
+.contact-phone {
+    width:100%;
+    margin:25px 0;
+    overflow:hidden;
+}
+
+.contact-phone ul {
+    display:block;
+    float:left;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+.contact-phone ul li {
+    width:49%;
+    margin-left:0 !important;
+    float:left;
+    margin-right:2%;
+    background-color:#288AD6;
+    color:#fff;
+    padding:8px;
+    text-align:center;
+    border-radius:3px;
+    display:inline-block;
+}
+
+.contact-phone ul li a {
+    color:#fff;
+    display:block;
+    width:100%;
+    text-decoration:none;
+}
+
+.contact-phone ul li a {
+    color:#fff;
+    display:block;
+    width:100%;
+    text-decoration:none;
+}
+
+.contact-phone ul li p:last-of-type {
+    font-size:12px;
+    margin:0;
+}
+
+.contact-phone ul li:last-of-type {
+    margin-right:0;
+    background:rgba(58,85,159,1);
+}
+
+.contact-detail {
+    float:left;
+    width:100%;
+    margin-top:10px;
+    overflow:hidden;
+    clear:both;
+}
+
+.contact-detail ul {
+    list-style-type:none;
+    padding-left:0;
+    margin-left:0;
+    float:left;
+}
+
+.contact-detail ul li {
+    line-height:1.8em;
+    font-size:16px;
+    margin-bottom:0;
+    margin-left:0;
+}
+
+.contact-detail ul li span {
+    font-size:18px;
+    padding-right:8px;
+    color:#f69419;
+}
+
+.contact-detail ul li:nth-child(1) span {
+    color:#0cca4b;
+    font-size:20px;
+    padding-right:10px;
+}
+
+button.single_add_to_cart_button.button.alt {
+    border-radius:5px;
+    width:calc(100% - 110px);
+}
+
+.product-section-title-wrapper {
+    text-align: center;
+}
+
+.product-section-title {
+    transition: ease all .3s;
+    background-color: #fcf2f2;
+    border: 1px solid #f69419;
+    color: #f69419;
+    display: inline-block;
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.product-description {
+    background: rgb(249, 250, 251);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+}
