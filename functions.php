@@ -18,6 +18,7 @@ add_action('wp_enqueue_scripts', function () {
 
     if (is_product()) {
         wp_enqueue_style('product-page', get_stylesheet_directory_uri() . '/css/product-page.css', array(), rand(111, 9999), 'all');
+        wp_enqueue_script('front-page', get_stylesheet_directory_uri() . '/js/product-page.js', array('jquery'), rand(111, 9999), true);
     }
 });
 
