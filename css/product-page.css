@@ -92,7 +92,7 @@ button.single_add_to_cart_button.button.alt {
     text-align: center;
 }
 
-.product-section-title {
+.product-section-title :not(section.product-section-box.inside-title h3) {
     transition: ease all .3s;
     background-color: #fcf2f2;
     border: 1px solid #f69419;
@@ -238,4 +238,27 @@ button.single_add_to_cart_button.button.alt {
 
 .devvn_readmore_flatsome_less:before {
     display: none;
+}
+
+.section.product-section-box.inside-title h3 {
+    text-align: center;
+    color: #f69419;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-section {
+    border-top: none !important;
+}
+
+span.amount {
+    color: #d70018;
+    font-size: 28px;
+}
+
+del span.amount {
+    color: #222;
+    font-size: 18px;
 }
