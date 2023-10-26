@@ -1,0 +1,150 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 1.0.6
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+
+@media only screen and (max-width: 48em) {
+  /*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
+
+/* PROJECT SETUP, VARIABLE DEFINE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-lightest: color-mix(in srgb, #e01020, #FFF 90%);
+  --primary-lighter: color-mix(in srgb, #e01020, #FFF 60%);
+  --primary-light: color-mix(in srgb, #e01020, #FFF 25%);
+  --primary-medium: #e01020;
+  --primary-dark: color-mix(in srgb, #e01020, #000 25%);
+  --primary-darker: color-mix(in srgb, #e01020, #000 50%);
+  --primary-darkest: color-mix(in srgb, #e01020, #000 75%);
+  --gray-lightest: #f9fafb;
+  --gray-lighter: #e5e7eb;
+  --gray-light: #9ca3af;
+  --gray-medium: #6b7280;
+  --gray-dark: #4b5563;
+  --gray-darker: #374151;
+  --gray-darkest: #111928;
+}
+
+html,
+html div {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+html p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+html span {
+  margin: 0;
+}
+
+/* CUSTOMIZE MAIN ROW TO HAVE FULL WIDTH */
+
+html #content {
+  padding: 0 !important;
+}
+
+html #main > #content > .row-main > .col {
+  padding: 0;
+}
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+html .row, html .container {
+  max-width: 1280px !important;
+}
+
+html .row:not(.row-collapse) > .col {
+  padding: 0;
+}
+
+html .row.row-main,
+html .row.row-full-width {
+  max-width: 100% !important;
+}
+
+html .row.row-main .section,
+html .row.row-full-width .section {
+  padding: 0;
+}
+
+html .row.row-main .section .section-content > .row,
+html .row.row-full-width .section .section-content > .row {
+  margin: auto;
+}
+
+.page-wrapper {
+  padding: 0;
+}
+
+/********* CONTAINER TITLE *********/
+.section-title-container {
+	padding: 0;
+}
+.section-title-container .section-title {
+	justify-content: center;
+}
+.section-title-container .section-title, 
+.section-title-container .section-title-main {
+	border-bottom: 0;
+	text-align: center;
+}
+.section-title-container .section-title-main {
+	position: relative;
+}
+.section-title-container .section-title-main:after {
+	bottom: -5px;
+	left: 50%;
+	transform: translatex(-50%);
+	position: absolute;
+	display: inline-block;
+	content: "";
+	width: 60%;
+	height: .2rem;
+	background-color: var(--gray-darkest);
+}
+
+/*************** ALL SCREEN CSS HERE  ***************/
+@media screen and (min-width: 550px) {
+  .row.row-small > .col:not(:last-of-type, :first-of-type) {
+    padding: 0 .5rem !important;
+  }
+
+  .row.row-small > .col:first-of-type {
+    padding-right: 1rem !important;
+  }
+
+  .row.row-small > .col:last-of-type {
+    padding-left: 1rem !important;
+  }
+}
+
+/*************** ADD TABLET AND MOBILE ONLY CSS HERE  ***************/
+@media screen and (max-width: 850px) {
+  :root {
+    font-size: 50% !important;
+  }
+}

@@ -1,0 +1,70 @@
+/********* HEADER *********/
+#masthead {
+	border-bottom: 1px solid var(--gray-lighter);
+}
+#masthead .flex-col:has(.nav-right){
+	flex: 1;
+	margin-left: 2rem;
+}
+#masthead .flex-right .nav-right {
+	flex-flow: nowrap;
+}
+#masthead .flex-right .nav-right .header-cart-link {
+	width: 5rem;
+}
+
+/* hotline-location block */
+.hotline-location {
+	display: flex;
+	justify-content: flex-end;
+}
+.hotline-location__item {
+	display: flex;
+	align-items: center;
+	column-gap: .6rem;
+	cursor: pointer;
+}
+.hotline-location__text-container span {
+	font-weight: 600;
+}
+
+/* Vertical menu */
+.header-vertical-menu__title {
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+	line-height: 1;
+}
+.header-vertical-menu__title:before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(https://thegioiconggiao.vn/wp-content/uploads/2023/10/4-box-icon-1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Header bottom */
+#wide-nav .nav-right a {
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+/********** MEDIA QUERY ***********/
+@media screen and (max-width: 849px) {
+	.header-block:has(.hotline-location) {
+		justify-content: center;
+	}
+	.hotline-location {
+		margin-top: 2rem;
+		flex-flow: column nowrap;
+		row-gap: 2rem;
+	}
+	#masthead a[data-open='#main-menu'] {
+		font-size: 1.8rem;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+	}
+}
