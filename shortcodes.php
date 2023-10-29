@@ -24,7 +24,7 @@ add_shortcode('product-full-description', function () {
 });
 
 // Single product attributes
-add_shortcode('product-attributes', function () {
+add_shortcode('product-attributes', function ($atts) {
     global $product;
 
     if (!is_object($product) || !$product->has_attributes()) {

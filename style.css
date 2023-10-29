@@ -3,7 +3,7 @@ Theme Name: Flatsome Child
 Description: This is a child theme for Flatsome Theme
 Author: UX Themes
 Template: flatsome
-Version: 1.0.6
+Version: 1.1.1.5
 */
 
 /*************** ADD CUSTOM CSS HERE.   ***************/
@@ -68,16 +68,21 @@ html #content {
 html #main > #content > .row-main > .col {
   padding: 0;
 }
+
 .container {
-	padding-left: 0;
-	padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 html .row, html .container {
   max-width: 1280px !important;
 }
 
-html .row:not(.row-collapse) > .col {
+.container .row-small:not(.row-collapse), .row .row-small:not(.row-collapse) {
+  margin: 0;
+}
+
+html .row:not(.row-collapse, .woocommerce) > .col {
   padding: 0;
 }
 
@@ -101,30 +106,60 @@ html .row.row-full-width .section .section-content > .row {
 }
 
 /********* CONTAINER TITLE *********/
-.section-title-container {
-	padding: 0;
+.section-title-container.container {
+  margin-bottom: 2rem;
+  padding: 0;
 }
-.section-title-container .section-title {
-	justify-content: center;
+
+.section-title-container .section-title-normal {
+  justify-content: center;
 }
-.section-title-container .section-title, 
-.section-title-container .section-title-main {
-	border-bottom: 0;
-	text-align: center;
+
+.section-title-container .section-title-normal,
+.section-title-container .section-title-normal .section-title-main {
+  border-bottom: 0;
+  text-align: center;
 }
-.section-title-container .section-title-main {
-	position: relative;
+
+.section-title-container .section-title-normal .section-title-main {
+  position: relative;
 }
-.section-title-container .section-title-main:after {
-	bottom: -5px;
-	left: 50%;
-	transform: translatex(-50%);
-	position: absolute;
-	display: inline-block;
-	content: "";
-	width: 60%;
-	height: .2rem;
-	background-color: var(--gray-darkest);
+
+.section-title-container .section-title-normal .section-title-main:after {
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 60%;
+  height: .3rem;
+  background-color: var(--gray-darkest);
+}
+
+/* left style */
+.section-title-container .section-title-bold .section-title-main {
+  border: 0;
+}
+
+.section-title-container .section-title-bold b {
+  display: none;
+}
+
+.section-title-bold .section-title-main {
+  padding-left: 0;
+}
+
+.section-title-container .section-title a {
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--gray-lightest);
+  border-radius: 1rem;
+  color: var(--gray-darkest);
+}
+
+.section-title-container .section-title a:hover {
+  box-shadow: 0 0 .2rem rgba(0, 0, 0, .25);
 }
 
 /*************** ALL SCREEN CSS HERE  ***************/
