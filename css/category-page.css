@@ -4,3 +4,56 @@
     padding-bottom: 25px;
     position: relative;
 }
+
+.category-page-row .widget.widget_wpc_filters_widget, .category-page-row .wpc-custom-selected-terms {
+    display: none;
+}
+
+li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a {
+    padding: 0;
+}
+
+li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term {
+    display: inline-block;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    line-height: 28px;
+}
+
+.wc-layered-nav-term.chosen > a:before {
+    line-height: 15px !important;
+    opacity: 1 !important;
+    color: #fff !important;
+    background-color: #fc525d !important;
+}
+
+aside .is-divider {
+    height: 0;
+}
+
+h3.widget-title, span.widget-title {
+    text-transform: none !important;
+}
+
+.widget-title {
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.widget-title:before {
+    content: "";
+    width: 50%;
+    border-top: 2px solid #d70018;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
