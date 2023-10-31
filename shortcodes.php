@@ -39,10 +39,10 @@ add_shortcode('product-attributes', function ($atts) {
         /** @var WC_Product_Attribute $attribute */
         foreach ($attributes as $attribute) {
 
-                $attribute_label = $attribute->get_name();
-                $attribute_value = implode(', ', $attribute->get_options());
+            $attribute_label = $attribute->get_name();
+            $attribute_value = implode(', ', $attribute->get_options());
 
-                $html .= '<li>' . esc_html($attribute_label) . ' : ' . esc_html($attribute_value) . '</li>';
+            $html .= '<li>' . esc_html($attribute_label) . ' : ' . esc_html($attribute_value) . '</li>';
 
         }
 

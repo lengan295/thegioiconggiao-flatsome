@@ -1,0 +1,9 @@
+.section p:has(strong),
+.section h2 {
+  margin-bottom: 2rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
