@@ -36,11 +36,25 @@ add_shortcode('product-attributes', function ($atts) {
 
     if (!empty($attributes)) {
 
-        /** @var WC_Product_Attribute $attribute */
-        foreach ($attributes as $attribute) {
+        /** @var WC_Product_Attribute $product_attribute */
+        foreach ($attributes as $product_attribute) {
 
-            $attribute_label = $attribute->get_name();
-            $attribute_value = implode(', ', $attribute->get_options());
+            if (!$product_attribute->is_taxonomy()) {
+                $attribute_label = $product_attribute->get_name();
+                $attribute_value = implode(', ', $product_attribute->get_options());
+            } else {
+                $taxonomy = $product_attribute->get_taxonomy_object();
+                $attribute_label = $taxonomy->attribute_label;
+
+                $terms = $product_attribute->get_terms();
+                if (is_array($terms)) {
+                    $attribute_value = implode(', ', array_map(function (WP_Term $t) {
+                        return $t->name;
+                    }, $terms));
+                } else {
+                    $attribute_value = '';
+                }
+            }
 
             $html .= '<li>' . esc_html($attribute_label) . ' : ' . esc_html($attribute_value) . '</li>';
 
